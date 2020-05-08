@@ -73,7 +73,7 @@ public class messageAdapt extends RecyclerView.Adapter<messageAdapt.NumberViewHo
         CircleImageView iv_avatar;
         ImageView robot_notice;
         TextView tv_tittle;
-        TextView tv_desc;
+        TextView tv_description;
         TextView tv_time;
 
         public NumberViewHolder(@NonNull View itemView) {
@@ -81,7 +81,7 @@ public class messageAdapt extends RecyclerView.Adapter<messageAdapt.NumberViewHo
             iv_avatar = itemView.findViewById(R.id.iv_avatar);
             robot_notice = itemView.findViewById(R.id.robot_notice);
             tv_tittle = itemView.findViewById(R.id.tv_title);
-            tv_desc = itemView.findViewById(R.id.tv_description);
+            tv_description = itemView.findViewById(R.id.tv_description);
             tv_time = itemView.findViewById(R.id.tv_time);
             itemView.setOnClickListener(this);
         }
@@ -111,7 +111,7 @@ public class messageAdapt extends RecyclerView.Adapter<messageAdapt.NumberViewHo
                     break;
             }
             tv_tittle.setText(message.getTitle());
-            tv_desc.setText(message.getDescription());
+            tv_description.setText(message.getDescription());
             tv_time.setText(message.getTime());
         }
 
